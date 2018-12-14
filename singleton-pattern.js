@@ -1,5 +1,6 @@
 // The principle is simple for a singleton pattenr
 // Create an instance iff instance is not exist, else return the existing instance
+// We can use singleton pattern while setting config details in the application
 
 let mySingleton = (function(){
     //instance variable
@@ -41,3 +42,6 @@ let firstInstance = mySingleton.getInstance();
 let secondInstance = mySingleton.getInstance();
 
 console.log("are the objects firstInstance and secondInstance same? ", firstInstance === secondInstance ? true : false);
+
+console.log(firstInstance.getRandomNumber());
+console.log(secondInstance.getRandomNumber());
